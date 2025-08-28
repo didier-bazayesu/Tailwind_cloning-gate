@@ -139,8 +139,8 @@
 
            
             <div class="text-right space-y-2 md:mr-20">
-                <a href="#" class="underline block text-lg md:mr-6">Courses by A–Z</a>
-                <a href="#" class="underline block text-lg">Courses by subject</a>
+                <a href="#" class="underline  text-lg hidden md:block lg:block">Courses by A–Z</a>
+                <a href="#" class="underline hidden text-lg md:block lg:block">Courses by subject</a>
             </div>
         </div>
 
@@ -287,7 +287,7 @@
 
 
 
-    <div class="flex mt-20 ml-5 md:flex-row ">
+    <div class="flex mt-20 ml-5 md:flex-row  flex-col">
 
 
         <div class="bg-[#212b58] flex flex-col p-7  ">
@@ -302,7 +302,8 @@
     
                 <div class="text-white flex-wrap space-x-5 space-y-3 flex-col md:flex-row">
                     
-                    <button class="border-white border-[1px] cursor-pointer  p-2 py-3 text-lg  hover:underline">
+                    <button class="border-white border-[1px] cursor-pointer 
+                     p-2 py-3 text-lg  hover:underline">
                         Undergraduate
                     </button>
     
@@ -314,7 +315,8 @@
                         Postgraduate research
                     </button>
     
-                    <button class="border-white border-[1px] cursor-pointer  p-2 py-3 text-lg  hover:underline ml-10">
+                    <button class="border-white border-[1px] cursor-pointer  p-2 py-3 text-lg  
+                    hover:underline md:ml-10 lg:ml-10  ">
                     Continuing Professional Development
                     </button>
     
@@ -641,91 +643,38 @@
 
     <!-- continue -->
 
-    <div class="md:flex lg:flex hidden mt-20 ml-5  ">
-
-        <img src="src/image/aaa.webp" class="w-[450px] h-[400px]" alt="">
-    
-    
-        <div class=" flex flex-col p-7 ">
-            <h2 class="text-black font-semibold text-3xl pb-2">Discover a vibrant student life in Liverpool </h2>
-            <div class="  ">
-    
-                <p class="text-black text-[18px]">Enjoy a fantastic student experience 
-                    when you study with us. Explore the Guild of 
-                     Students, learn more about what’s happening in our amazing home 
-                     city and discover your accommodation options.
-                </p>
-                <br>
-    
-                <div class="text-black flex-wrap space-x-5 space-y-3 ">
-    
-
-
-                    <button class="border-black border-[1px] cursor-pointer  p-2 py-3 text-lg  hover:underline">
-                       <a href="">Student life at Liverpool</a> 
-                    </button>
-    
-                    <button class="border-black border-[1px] cursor-pointer  p-2 py-3 text-lg  hover:underline">
-                    <a href="">Why choose Liverpool?</a>
-                    </button> <br>
-    
-                    <button class="border-black border-[1px] cursor-pointer  p-2 py-3 text-lg  hover:underline px-3">
-                      
-                        <a href="">Find your accommodation</a>
-                    </button>
-    
-                   
-    
-                </div>
-            </div>
-    
-        </div>
-       
-    
+<div class="flex flex-col lg:flex-row mt-20 mx-5 gap-8">
+    <!-- Image Section -->
+    <div class="flex-shrink-0">
+        <img src="src/image/aaa.webp" class="w-full lg:w-[450px] h-[300px] lg:h-[400px] object-cover" alt="">
     </div>
 
-    <div class="flex lg:flex md:hidden mt-20 ml-5 flex-wr ">
-    
-        <img src="src/image/aaa.webp" class="w-[450px] h-[400px]" alt="">
-    
-    
-        <div class=" flex flex-col p-7 ">
-            <h2 class="text-black font-semibold text-3xl pb-2">Discover a vibrant student life in Liverpool </h2>
-            <div class="  ">
-    
-                <p class="text-black text-[18px]">Enjoy a fantastic student experience
-                    when you study with us. Explore the Guild of
-                    Students, learn more about what’s happening in our amazing home
-                    city and discover your accommodation options.
-                </p>
-                <br>
-    
-                <div class="text-black flex-wrap space-x-5 space-y-3 ">
-    
-    
-    
-                    <button class="border-black border-[1px] cursor-pointer  p-2 py-3 text-lg  hover:underline">
-                        <a href="">Student life at Liverpool</a>
-                    </button>
-    
-                    <button class="border-black border-[1px] cursor-pointer  p-2 py-3 text-lg  hover:underline">
-                        <a href="">Why choose Liverpool?</a>
-                    </button> <br>
-    
-                    <button class="border-black border-[1px] cursor-pointer  p-2 py-3 text-lg  hover:underline px-3">
-    
-                        <a href="">Find your accommodation</a>
-                    </button>
-    
-    
-    
-                </div>
-            </div>
-    
+    <!-- Text Content -->
+    <div class="flex flex-col justify-center p-4 lg:p-7">
+        <h2 class="text-black font-semibold text-2xl lg:text-3xl pb-3">
+            Discover a vibrant student life in Liverpool
+        </h2>
+        <p class="text-black text-base lg:text-[18px] leading-relaxed">
+            Enjoy a fantastic student experience when you study with us. Explore the Guild of
+            Students, learn more about what’s happening in our amazing home city and discover your
+            accommodation options.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-5 flex flex-col sm:flex-row sm:flex-wrap gap-4">
+            <a href="#" class="border border-black px-4 py-2 text-lg hover:underline text-center">
+                Student life at Liverpool
+            </a>
+            <a href="#" class="border border-black px-4 py-2 text-lg hover:underline text-center">
+                Why choose Liverpool?
+            </a>
+            <a href="#" class="border border-black px-4 py-2 text-lg hover:underline text-center">
+                Find your accommodation
+            </a>
         </div>
-    
-    
     </div>
+</div>
+
 
 
 
