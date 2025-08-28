@@ -13,13 +13,19 @@
 <body>
     <div 
         class="bg-[url('https://wsrv.nl/?output=webp&url=www.liverpool.ac.uk/media/livacuk/redbrick/welcome-homepage-new.jpg')]
-            bg-cover  bg-white text-[15px]">
+            bg-cover  bg-white text-[15px] bg-center">
             <nav class="flex justify-between p-5">
-                    <img src="src/image/a.svg" 
-                        class="w-70" alt=""      
+                    <img class="invert w-60 h-20" src="src/image/a.svg" 
+                        class="w-70 " alt=""      
                     >
 
-                    <div class="text-white  flex gap-8 mt-8">
+                    <div  class="md:hidden  lg:hidden "> 
+                        <i class="fas fa-search text-white text-xl "></i>
+                        <i class="fas fa-bars text-white"></i>
+                        
+                    </div>
+
+                    <div class="text-white  md:flex gap-8 mt-8 hidden lg:flex ">
 
                         <p class="hover:underline"><a href="#">News</a></p>
                         <p class="hover:underline"><a href="#">Jobs</a></p>
@@ -34,9 +40,9 @@
             </nav>
 
             
-            <nav   class="flex justify-between ml-5 mr-5">
+            <nav   class="flex justify-between ml-5 mr-5 font-bold">
 
-                <div class=" text-white flex text-[18px] gap-10">
+                <div class=" text-white md:flex text-[18px] gap-10 hidden lg:flex">
                     
                 
 
@@ -59,7 +65,7 @@
 
                     <a href="" class="">
                         <div class="flex gap-2 hover:underline">
-                            <p>REsearch and innovation</p>
+                            <p>Research and innovation</p>
                         <i class="fas fa-chevron-down text-white pt-3 text-[13px]"></i>
                         </div>
 
@@ -85,7 +91,7 @@
                     
                 </div>
                 
-                <a href="" class="hover:underline text-white">
+                <a href="" class="hover:underline text-white hidden md:block lg:block">
                     
                     <div class="flex">
                         <i class="fas fa-search text-white text-xl"></i>
@@ -98,7 +104,7 @@
 
             <div  class="mt-20 ml-2">
                 <fieldset class="border-[3px] border-white w-fit pr-30 ">
-                    <p class="text-[38px] text-white font-bold p-3 ">YOUR NEXT CHAPTER STARTS <br> NOW</p>
+                    <p class="text-[38px] text-white font-bold p-3  flex ">YOUR NEXT CHAPTER STARTS <br> NOW</p>
         
                 </fieldset>
         
@@ -116,45 +122,48 @@
                 </div>
 
             </div>
+ 
+    <div class="bg-[#1d2657] text-white px-6 py-10 mt-20">
+        
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6 mb-6">
 
-    <div class="bg-[#212b58] p-8 text-white mt-20">
+           
+            <div class=" md:w-2/3 flex flex-row gap-4 ">
+                <h2 class="text-2xl font-bold">Find your course</h2>
 
-        <div class="flex items-center justify-between space-x-8 mb-6">
-            <div class="flex items-center space-x-6 w-full max-w-4xl">
-                <h2 class="text-2xl font-semibold whitespace-nowrap">Find your course</h2>
-
-                <div class="flex items-stretch w-full gap-5">
-                    <input type="text" placeholder=""
-                        class="w-[500px] bg-white">
-                    <button class="border-white border-[1px] cursor-pointer px-8 py-3 text-lg font-medium hover:underline">
-                        Search
-                    </button>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="text" placeholder="" class="w-full sm:w-[500px] bg-white text-black px-4 py-2 rounded">
+                    <button class="border border-white px-6 py-2 hover:underline sm:w-[30px] md:w-[90px]">Search</button>
                 </div>
             </div>
 
-            <div class="flex flex-col space-y-2 text-right mr-20">
-                <a href="#" class="underline text-lg ">Courses by A-Z</a>
-                <a href="#" class="underline text-lg">Courses by subject</a>
+           
+            <div class="text-right space-y-2 md:mr-20">
+                <a href="#" class="underline block text-lg md:mr-6">Courses by A–Z</a>
+                <a href="#" class="underline block text-lg">Courses by subject</a>
             </div>
         </div>
 
-        <div class="flex space-x-12 mt-4 ml-20 mr-20 pt-3">
-            <div class="flex items-center space-x-2">
+      
+        <div class="flex flex-col sm:flex-row justify-start gap-6 sm:gap-12 mt-4">
+            <div class="flex items-center gap-2">
                 <div class="w-6 h-6 border-2 border-white rounded-full"></div>
                 <span class="text-lg">Undergraduate</span>
             </div>
 
-            <div class="flex items-center space-x-2">
+            <div class="flex items-center gap-2">
                 <div class="w-6 h-6 bg-white border-2 border-white rounded-full"></div>
                 <span class="text-lg">Postgraduate taught</span>
             </div>
 
-            <div class="flex items-center space-x-2">
-                <div class="w-6 h-6 border-2 border-white rounded-full"></div>
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-white border-2 border-white rounded-full"></div>
                 <span class="text-lg">Postgraduate research</span>
             </div>
         </div>
     </div>
+
+
 
  </div>
 
@@ -743,68 +752,132 @@
         </div>
     </div>
 
-    <div class="bg-[#212a30]">
+
+
+    <footer class="bg-[#212a30]" >
+
+        <div class="bg-[#212a30]  flex space-x-10 text-[17px]
+         pt-5 flex-col md:flex-row  sm:justify-center pl-10 md:pl-0 lg:pl-0
+          m-40 md:m-0 lg:m-0 space-y-5 lg:flex-row">
+    
+            <div class="ml-2">
+               <img src="src/image/orginal.svg" alt="" class="w-65 h-30">
+               
+            </div>
+    
+            <div class="space-y-2">
+                <p class="font-bold text-white text-[20px]">Information for</p>
+                <p><a href="#" class="underline text-white">Current students</a></p>
+                <p><a href="#" class="underline text-white">Current staff</a></p>
+                <p><a href="#" class="underline text-white">Prospective students</a></p>
+                <p><a href="#" class="underline text-white">Businesses and partners</a></p>
+                <p><a href="#" class="underline text-white">Researchers</a></p>
+                <p><a href="#" class="underline text-white">Media</a></p>
+            </div>
+    
+    
+            <div class="space-y-2">
+                <p class="font-bold text-white text-[20px]">Study at Liverpool</p>
+                <p><a href="#" class="underline text-white">Undergraduate</a></p>
+                <p><a href="#" class="underline text-white">Postgraduate taught</a></p>
+                <p><a href="#" class="underline text-white">Postgraduate research</a></p>
+                <p><a href="#" class="underline text-white">Online courses</a></p>
+                <p><a href="#" class="underline text-white">CPD</a></p>
+                <p><a href="#" class="underline text-white">Continuing education</a></p>
+                <p><a href="#" class="underline text-white">International students</a></p>
+            </div>
+    
+    
+            <div class="space-y-2">
+                <p class="font-bold text-white text-[20px]">Quick links</p>
+                <p><a href="#" class="underline text-white">Jobs at Liverpool</a></p>
+                <p><a href="#" class="underline text-white">Library</a></p>
+                <p><a href="#" class="underline text-white">Sport at Liverpool</a></p>
+                <p><a href="#" class="underline text-white">Our people</a></p>
+                <p><a href="#" class="underline text-white">Alumni</a></p>
+                <p><a href="#" class="underline text-white">Our departments and faculties</a></p>
+                <p><a href="#" class="underline text-white">All subjects</a></p>
+            </div>
+    
+    
+            <div class="space-y-2">
+                <p class="font-bold text-white text-[20px]">Contact us</p>
+                <p class="text-white">University of Liverpool</p>
+                <p class="text-white">Foundation Building</p>
+                <p class="text-white">Brownlow Hill</p>
+                <p class="text-white">Liverpool</p>
+                <p class="text-white">L69 7ZX</p>
+                <p class="text-white">+44 (0) 151 794 2000</p>
+            
+                <p><a href="#" class="underline text-white">Contact us</a></p>
+                <p><a href="#" class="underline text-white">Maps and directions</a></p>
+                <p><a href="#" class="underline text-white">Visit us</a></p>
+            </div>
+    
+            <hr class="border-white border-[1px]">  
+        </div>
+
+        <hr >
 
         <div>
-           <img src="src/image/orginal.svg" alt="" class="w-65 h-30">
-           
+            <div class="flex justify-between mx-5 flex-col md:flex-row">
+                <img src="src/image/bgremove-removebg-preview.png" alt="" class="w-40 mt-5 ">
+
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#" aria-label="Facebook">
+                        <img src="src/image/f.svg" alt="Facebook" class="invert-75 w-[40px]">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="src/image/i.svg" alt="Instagram" class="invert-75 w-[40px]">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="src/image/i.svg" alt="Instagram" class="invert-75 w-[40px]">
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="src/image/linked.svg" alt="LinkedIn" class="invert-75 w-[40px]">
+                    </a>
+                    <a href="#" aria-label="Ntago">
+                        <img src="src/image/ntago.svg" alt="Ntago" class="invert-75 w-[40px]">
+                    </a>
+                    <a href="#" aria-label="Ikiny">
+                        <img src="src/image/ikiny.svg" alt="Ikiny" class="invert-75 w-[40px]">
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <img src="src/image/g.svg" alt="GitHub" class="invert-75 w-[40px]">
+                    </a>
+                </div>
+
+
+
+                
+                
+            </div>
         </div>
-
-        <div class="space-y-2">
-            <p class="font-bold text-white">Information for</p>
-            <p><a href="#" class="underline text-white">Current students</a></p>
-            <p><a href="#" class="underline text-white">Current staff</a></p>
-            <p><a href="#" class="underline text-white">Prospective students</a></p>
-            <p><a href="#" class="underline text-white">Businesses and partners</a></p>
-            <p><a href="#" class="underline text-white">Researchers</a></p>
-            <p><a href="#" class="underline text-white">Media</a></p>
-        </div>
-
-
-        <div class="space-y-2">
-            <p class="font-bold text-white">Study at Liverpool</p>
-            <p><a href="#" class="underline text-white">Undergraduate</a></p>
-            <p><a href="#" class="underline text-white">Postgraduate taught</a></p>
-            <p><a href="#" class="underline text-white">Postgraduate research</a></p>
-            <p><a href="#" class="underline text-white">Online courses</a></p>
-            <p><a href="#" class="underline text-white">CPD</a></p>
-            <p><a href="#" class="underline text-white">Continuing education</a></p>
-            <p><a href="#" class="underline text-white">International students</a></p>
-        </div>
-
-
-        <div class="space-y-2">
-            <p class="font-bold text-white">Quick links</p>
-            <p><a href="#" class="underline text-white">Jobs at Liverpool</a></p>
-            <p><a href="#" class="underline text-white">Library</a></p>
-            <p><a href="#" class="underline text-white">Sport at Liverpool</a></p>
-            <p><a href="#" class="underline text-white">Our people</a></p>
-            <p><a href="#" class="underline text-white">Alumni</a></p>
-            <p><a href="#" class="underline text-white">Our departments and faculties</a></p>
-            <p><a href="#" class="underline text-white">All subjects</a></p>
-        </div>
-
-
-        <div class="space-y-2">
-            <p class="font-bold text-white">Contact us</p>
-            <p class="text-white">University of Liverpool</p>
-            <p class="text-white">Foundation Building</p>
-            <p class="text-white">Brownlow Hill</p>
-            <p class="text-white">Liverpool</p>
-            <p class="text-white">L69 7ZX</p>
-            <p class="text-white">Telephone: +44 (0) 151 794 2000</p>
         
-            <p><a href="#" class="underline text-white">Contact us</a></p>
-            <p><a href="#" class="underline text-white">Maps and directions</a></p>
-            <p><a href="#" class="underline text-white">Visit us</a></p>
+        <hr >
+
+   
+    <footer class="bg-[#1e262b] text-white text-base px-4 py-6 text-[18px]">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap gap-x-6 gap-y-2 mb-4">
+                <a href="#" class="underline hover:text-gray-300">Accessibility</a>
+                <a href="#" class="underline hover:text-gray-300">Freedom of information</a>
+                <a href="#" class="underline hover:text-gray-300">Cookie information</a>
+                <a href="#" class="underline hover:text-gray-300">Data Protection</a>
+                <a href="#" class="underline hover:text-gray-300">Modern slavery statement</a>
+                <a href="#" class="underline hover:text-gray-300">Terms and Conditions</a>
+                <a href="#" class="underline hover:text-gray-300">Charitable status</a>
+            </div>
+            <div class="text-sm">
+                © University of Liverpool
+            </div>
         </div>
+    </footer>
 
 
+</footer>
+    
 
-
-
-
-    </div>
 
 
 
@@ -812,8 +885,7 @@
 
 
     
-       <br><br><br>
-
+    
 
   
 </body>
